@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >主页介绍</item>
+        <item >开关控制</item>
+        <item >布防设置</item>
+        <item >门口监控</item>
+        <item >分机通话</item>
+        <item >系统设置</item>
+        <item >关于系统</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/left_menu_home</item>
+        <item>@drawable/left_menu_switch</item>
+        <item>@drawable/left_menu_safeguard</item>
+        <item>@drawable/left_menu_monitor</item>
+        <item>@drawable/left_menu_p2ptalk</item>
+        <item>@drawable/left_menu_setting</item>
+        <item>@drawable/left_menu_about</item>
+    </array>
+    
+    <string-array name="home_titles">
+        <item >蓝天1</item>
+        <item >蓝天2</item>
+    </string-array>
+    
+     <array name="home_images">
+         <item >new1</item>
+         <item >new2</item>
+     </array>
+    
+</resources>

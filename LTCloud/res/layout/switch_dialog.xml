@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View 
+        android:id="@+id/vSwitchType1"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" /> 
+    
+    <TextView
+        android:id="@+id/tvSwitchType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSwitchType1"
+        android:text="开关类型:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgSwitchType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSwitchType1"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbSwitchType1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="系统" />
+
+        <RadioButton
+            android:id="@+id/rbSwitchType1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vSwitchEnable"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgSwitchType1"/> 
+
+    <TextView
+        android:id="@+id/tvSwitchEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSwitchEnable"
+        android:text="可用情况:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgSwitchEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSwitchEnable"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbSwitchEnable_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="可用" />
+
+        <RadioButton
+            android:id="@+id/rbSwitchEnable_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不可用" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vSwitchState"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgSwitchEnable"/> 
+        
+    <TextView
+        android:id="@+id/tvSwitchState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSwitchState"
+        android:text="开关状态:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgSwitchState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSwitchState"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbSwitchState_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="开" />
+
+        <RadioButton
+            android:id="@+id/rbSwitchState_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vSwitchType2"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgSwitchState"/> 
+        
+    <TextView
+        android:id="@+id/tvSwitchType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSwitchType2"
+        android:text="开关种类:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgSwitchType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSwitchType2"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbSwitchType2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="电器类" />
+
+        <RadioButton
+            android:id="@+id/rbSwitchType2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮类" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vSwitchName"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgSwitchType2"/> 
+    
+     <TextView
+         android:id="@+id/tvSwitchName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/vSwitchName"
+         android:text="开关名称:"
+         android:textColor="@color/blue" />
+     
+     <EditText
+        android:id="@+id/etSwitchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/tvSwitchName"
+        android:ems="10" />
+        
+
+    <View 
+        android:id="@+id/vEnd"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/etSwitchName"/> 
+    <Button
+        android:id="@+id/switch_set_OK"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vEnd"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="确定" />
+
+   <Button
+       android:id="@+id/switch_set_Cancel"
+       android:layout_width="100px"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/switch_set_OK"
+       android:layout_alignBottom="@+id/switch_set_OK"
+       android:layout_toRightOf="@+id/switch_set_OK"
+       android:text="取消" />
+
+</RelativeLayout>

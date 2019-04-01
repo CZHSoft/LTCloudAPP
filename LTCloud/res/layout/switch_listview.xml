@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/switchListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="0dip"
+    android:paddingLeft="0dip" >
+    
+    <Button
+        android:id="@+id/itemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="详细" />
+
+    <TextView
+        android:id="@+id/itemSwitchNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:textSize="20sp"
+        android:text="SwitchNo" />
+
+    <TextView
+        android:id="@+id/itemSwitchType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemSwitchType2"
+        android:layout_alignBottom="@+id/itemSwitchType2"
+        android:layout_alignParentLeft="true"
+        android:text="Switchtype1"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/itemSwitchEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/itemSwitchType1"
+        android:layout_alignBottom="@+id/itemSwitchType1"
+        android:layout_toRightOf="@+id/itemSwitchType1"
+        android:text="SwitchEnable"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/itemSwitchType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemSwitchNo"
+        android:layout_toRightOf="@+id/itemSwitchEnable"
+        android:text="SwitchType2"
+        android:textSize="10sp" />
+
+    <com.ltnw.common.controls.SlideSwitch
+        android:id="@+id/itemSlideSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/itemButton" />
+
+</RelativeLayout>

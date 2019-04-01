@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <View 
+        android:id="@+id/vServID"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" /> 
+    
+    <TextView
+        android:id="@+id/tvServID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vServID"
+        android:text="服务ID:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgServID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvServID"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etServID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vServIP"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgServID"/> 
+
+    <TextView
+        android:id="@+id/tvServIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vServIP"
+        android:text="服务地址:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgServIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvServIP"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etServIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vSoapPort"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgServIP"/> 
+        
+    <TextView
+        android:id="@+id/tvSoapPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vSoapPort"
+        android:text="登录端口:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgSoapPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSoapPort"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etSoapPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </RadioGroup>
+    
+    <View 
+        android:id="@+id/vServPort"
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="#ff666666" 
+        android:layout_below="@+id/rgSoapPort"/> 
+        
+    <TextView
+        android:id="@+id/tvServPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vServPort"
+        android:text="服务端口:"
+        android:textColor="@color/blue" />
+    
+    <RadioGroup
+        android:id="@+id/rgServPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvServPort"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etServPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </RadioGroup>
+    
+    <View
+        android:id="@+id/vEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/rgServPort"
+        android:background="#ff666666" />
+ 
+    <Button
+        android:id="@+id/login_set_OK"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vEnd"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="确定" />
+
+   <Button
+       android:id="@+id/login_set_Cancel"
+       android:layout_width="100px"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/login_set_OK"
+       android:layout_alignBottom="@+id/login_set_OK"
+       android:layout_toRightOf="@+id/login_set_OK"
+       android:text="取消" />
+
+</RelativeLayout>

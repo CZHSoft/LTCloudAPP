@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/switch_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!--  
+    <com.ltnw.common.controls.DragGridView
+        android:id="@+id/switch_dragGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="center"
+        android:horizontalSpacing="10dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dip" >
+    </com.ltnw.common.controls.DragGridView>
+-->
+    <ListView
+        android:id="@+id/switchListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp" >
+    </ListView>
+</LinearLayout>
+
